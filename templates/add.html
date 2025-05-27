@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f8f9fa;">
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <h2 class="mb-4 text-success">Add New Employee</h2>
+            <form method="POST">
+                <div class="mb-3">
+                    <label>Name:</label>
+                    <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Email:</label>
+                    <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Phone:</label>
+                    <input type="text" name="phone" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Position:</label>
+                    <input type="text" name="position" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label>Salary:</label>
+                    <input type="number" name="salary" step="0.01" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success">Add</button>
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">Back</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
